@@ -131,6 +131,9 @@ Gets triggered every time autocomplete input got changed
 #### change
 Gets triggered when the autocomplete results got changed
 
+#### input
+Gets triggered when the autocomplete field recieves the input event.
+
 #### keypress
 Gets triggered when a key gets pressed
 

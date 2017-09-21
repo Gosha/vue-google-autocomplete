@@ -9,6 +9,7 @@
         @focus="onFocus()"
         @blur="onBlur()"
         @change="onChange"
+        @input="onInput()"
         @keypress="onKeyPress"
     />
 </template>
@@ -155,6 +156,13 @@
              */
             onChange() {
               this.$emit('change', this.autocompleteText);
+            },
+
+            /**
+             * When the input emits an input event
+             */
+            onInput() {
+                this.$emit('input', this.autocompleteText);
             },
 
             /**
